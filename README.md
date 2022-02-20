@@ -1,2 +1,2 @@
 # CVPR21
-Computer Vision and Pattern Recognition assignments in collaboration with [https://github.com/akbazuka](@akbazuka)
+Computer Vision and Pattern Recognition assignments in collaboration with [@akbazuka](https://github.com/akbazuka)
