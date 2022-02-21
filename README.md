@@ -26,3 +26,6 @@ There is the necessity of 1-D interpolation in the direction of each shear due t
 <img src="https://user-images.githubusercontent.com/45520841/155029333-2635e8b7-d8f8-495c-94cb-3871ed712820.png" alt="difference" width="220"/>
 
 Where pixel value scales from black (no difference) to white (maximal difference). This mostly occurs in regions where there is a large change in pixel values, i.e edges.
+
+## Histogram Equalisation ##
+
