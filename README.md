@@ -29,3 +29,19 @@ where pixel value scales from black (no difference) to white (maximal difference
 
 ## Histogram Equalisation ##
 
+**Image and its pixel intensity distribution + CDF before equalisation**
+
+<img src="https://user-images.githubusercontent.com/45520841/159370505-c612318b-799b-414d-9c7f-c4853adb6cc5.png" alt="original" width="324"> <img src="https://user-images.githubusercontent.com/45520841/159371431-94e46b00-c730-4c31-bf1c-8b2e63c58484.png" alt="originalhist" width="500">
+
+For the above image, the bimodal peak in the pixel intensity graph shows us that the majority of the pixel values lie around the values of 25 and 200. This can also by seen by the comparitive steepness of the CDF in those regions. The aim of pixel equalisation is to achieve a more 'flat' distribution such that all the pixel values are evenly used. The result of this and the corresponding distribution are below:
+
+**Image and its pixel intensity distribution + CDF after equalisation**
+
+<img src="https://user-images.githubusercontent.com/45520841/159370528-6a25ccee-b984-4ad4-9c2e-4337a40e1f6d.png" alt="equalised" width = "324"> <img src="https://user-images.githubusercontent.com/45520841/159371438-3bcd6647-d28b-450a-adfc-69aebff19072.png" alt="equalhist" width="500">
+
+## Edge Detection ##
+More specifically, locating the edge of greatest gradient within an image with a 2 step process:
+-   Apply the Sobel operator from the cv2 library to highlight the edges within the image.
+-   Populate a Hough space from the operated image parametrised by \rho and \theta to find the region with largest \theta
+
+
