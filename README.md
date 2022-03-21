@@ -39,9 +39,18 @@ For the above image, the bimodal peak in the pixel intensity graph shows us that
 
 <img src="https://user-images.githubusercontent.com/45520841/159370528-6a25ccee-b984-4ad4-9c2e-4337a40e1f6d.png" alt="equalised" width = "324"> <img src="https://user-images.githubusercontent.com/45520841/159371438-3bcd6647-d28b-450a-adfc-69aebff19072.png" alt="equalhist" width="500">
 
+The even distribution is achieved by stretching the 'overpopulated' pixel values out across a wider range vice-versa for the 'underpopulated' values.
+
 ## Edge Detection ##
-More specifically, locating the edge of greatest gradient within an image with a 2 step process:
+More specifically, locating the edge of greatest gradient within an image using a 2 step process:
 -   Apply the Sobel operator from the cv2 library to highlight the edges within the image.
--   Populate a Hough space from the operated image parametrised by \rho and \theta to find the region with largest \theta
+
+           Before:                       After:
+
+<img src="https://user-images.githubusercontent.com/45520841/159376880-70ec85d0-7dc9-4727-a275-63fea1b49097.png" alt="original" width = "400"> <img src="https://user-images.githubusercontent.com/45520841/159377508-55315534-0d7c-4ae8-aaf3-64d557b81e14.png" alt="operated" width = "400">
+
+-   Populate a Hough space from the operated image parametrised by \rho and \theta to find the region with largest \theta then overlay the corresponding line on the original image.
+<img src="https://user-images.githubusercontent.com/45520841/159376876-b8062588-b0ef-4bed-b877-22b4da3e9423.png" alt ="graddetect" width = "500">
+
 
 
